@@ -48,7 +48,7 @@ export default function BasketScreen() {
         <View key={item.id} style={styles.card}>
           <Image source={item.img} style={styles.img} resizeMode="contain" />
           <Text style={styles.name}>{item.nombre}</Text>
-          <Text style={styles.price}>{item.precio}</Text>
+          <Text style={styles.price}>L. {item.precio}</Text>
           <TouchableOpacity style={styles.btn} onPress={() => addToCart(item)}>
             <Text style={styles.btnText}>AGREGAR</Text>
           </TouchableOpacity>
